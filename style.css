@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:active,
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.current {
+    text-decoration: underline;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: #7a797d;
+}
+
+body {
+    background-color: #F3F4F6;
+}
+
+header {
+    height: 95vh;
+}
+
+h1,
+h2 {
+    color: #000000;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.presentation {
+    font-size: 3rem;
+}
+
+nav {
+    display: flex;
+    height: 5.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 35%;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nombre {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.portada {
+    background: url("./images/showcase.jpg");
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+
+.portada>div {
+    background-color: #F3F4F6;
+    padding: 5rem;
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    text-align: center;
+}
+
+.portada>div>p {
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 9rem;
+    padding: 9rem 0;
+    height: 150vh;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.card-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 530px;
+    width: 550px;
+}
+
+.card-flex img {
+    width: 450px;
+    height: auto;
+    display: block;
+}
+
+footer {
+    background-color: #CCCAD1;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>a {
+    display: inline-flex;
+    gap: 0.2rem;
+    background-color: black;
+    color: white !important;
+    padding: 0.2rem 0.5rem;
+    border-radius: 500px;
+    font-size: 0.75rem;
+    align-items: center;
+}
+
+footer>a>svg {
+    color: white;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+body.about {
+    min-height: 100vh;
+}
+
+header.about {
+    height: 9.5vh;
+}
+
+section.about {
+    display: flex;
+    max-height: 75vh;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+section.about>div {
+    width: 30%;
+}
+
+section.about>div>h2,
+section.contact>div>h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+section.about>div>p,
+section.contact>div>p {
+    max-width: 500px;
+    min-width: 500px;
+    margin: 0.7rem 0;
+    line-height: 1.7rem;
+    color: #7a707d;
+}
+
+section.about>img {
+    width: 30%;
+    height: auto;
+}
+
+footer.about {
+    height: 15.05vh;
+    position: relative;
+    bottom: 2rem;
+}
+
+section.contact {
+    display: flex;
+    max-height: 65vh;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20%;
+}
